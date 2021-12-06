@@ -3,6 +3,7 @@ print("1: for finding the volume of sphere")
 print('2: for vol of cube')
 
 def sphere(set):
+    import math
     r = float(input('radius of the sphere'))
     print('type 1 for volume of sphere')
     print('type 2 for area of sphere')
@@ -10,25 +11,16 @@ def sphere(set):
     if r<0:
         print('input invalid, input a positive number')
     
-    else:
+    else: 
+
         if k==1:
-            def volume_of_sphere(v):
-
-                print('the radius of the sphere is = ',r)
-                import math
-                print("the value of pi used is",math.pi)
-                volume = ((math.pi)*(4/3)*r**3)
-                print(volume)
-            return
+            volume_of_sphere_ = print(((math.pi)*(4/3)*r**3))
+            print('this is the value of volume of given sphere')
+                
         elif k==2:
-            def surface_area_sphere(a):
+            area_of_sphere_=print(((4)*(math.pi)*(r*r)))
+            print('this is the value of area of given sphere')
 
-                print('the radius of the sphere is = ', r)
-                import math
-                print('the radius of the sphere is = ',r)
-                area=((4)*(math.pi)*(r**2))
-                print (area)
-            return  
 
 def cube(v):
     edge=float(input('input the side length of the cube'))
@@ -51,14 +43,12 @@ def cube(v):
             return surface_area_cube
         else:
             print('input valid command')
-            return cube   #error response, send back to start
+            return cube
 
 
 
-b = int(input())
+b = int(input('select your shape'))
 if b==1:
- sphere(input)
+    sphere(input)
 if b==2:
     cube(input)
-else:
-    print("select a valid")
