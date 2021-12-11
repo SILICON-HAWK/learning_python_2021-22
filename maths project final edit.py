@@ -1,19 +1,27 @@
-#Final
-import math
-def volume_of_cone(r,h):                         #BY 21BCE10077
-    c=(1/3)*(math.pi)*(r**2)*h
-    return c
-def curved_surface_area_of_cone(r,h):
-    l=(r**2+h**2)**0.5
-    area= (math.pie)*r*l
-    return area
-def total_surface_area_of_a_cone(r,h):
-    l=(r**2+h**2)**0.5
-    area=(math.pie)*r*(l+h)
-    return area
 
-
-
+def cone(r,h):
+    import math
+    r=float(input("Enter radius:"))
+    h=float(input("Enter height"))
+    print("select:"'\n',"1.Curved surface area of cone",'\n',"2.Total surface area of cone",'\n',"3.Volume of cone")
+    s=int(input("Enter your choose:"))
+    if s==3:
+        def volume_of_cone(r,h):                         #BY 21BCE10077
+            c=(1/3)*(math.pi)*(r**2)*h
+            return c
+        print("volume of cone==",volume_of_cone(r,h))
+    if s==1:    
+        def curved_surface_area_of_cone(r,h):
+            l=(r**2+h**2)**0.5
+            area= (math.pi)*r*l
+            return area
+        print("Curved surface area of cube =",curved_surface_area_of_cone(r,h))
+    if s==2:    
+        def total_surface_area_of_a_cone(r,h):
+            l=(r**2+h**2)**0.5
+            area=(math.pi)*r*(l+h)
+            return area
+        print("Total surface area of cone==",total_surface_area_of_a_cone(r,h))
 
 def sphere(set):                                #BY21BCE10074
     import math
@@ -35,11 +43,10 @@ def sphere(set):                                #BY21BCE10074
             area_of_sphere_ = print(((4) * (math.pi) * (r * r)))
             print('this is the value of area of given sphere')
 
-
 def cube(v):
     edge = float(input('input the side length of the cube'))
     print("select:")
-    print('1.volume of cube')
+    print('1. volume of cube')
     print('2. area of the cube')
     k = int(input('select your action'))
     if edge < 0:
@@ -62,87 +69,84 @@ def cube(v):
             print('input valid command')
             return cube
 
-
-
-
-
-
-def hemisphere_area(r):                                #By 21BCG10140
-  a=3*(22/7)*r*r
-  return a
-def hemisphere_volume(r):
-  v=(2/3)*(22/7)*r*r*r
-  return v
-def cubiod_volume(l,b,h):            #BY
-    volume =l*b*h
-    return volume
-def Total_surface_area_of_cubiod_(l,b,h):
-    a=2*(l*b+b*h+l*h)
-    return a
-def lateral_surface_area_of_cuboid(l,b,h):
-    q= 2*h*(l+b)
-    return q
-
-
-
-
-
-print("select the action you would like to take",'\n',"1.cude",'\n',"2.cone",'\n',"3.sphere",'\n',"4.Hemisphere",'\n',"5.cubiod")
-b = int(input("Enter:"))
-if b==1:
-    cube(input)
-if b==2:
-
-    print("select:"'\n',"1.Curved surface area of cone",'\n',"2.Total surface area of cone",'\n',"3.Volume of cone")
-    s=int(input("Enter your choose:"))
-    if s==1:
-        r=float(input("Enter radius:"))
-        h=float(input("Enter height"))
-        print("Curved surface area of cube =",curved_surface_area_of_cone(r,h))
-    elif s==2:
-        r = float(input("Enter radius:"))
-        h = float(input("Enter height"))
-        print("Total surface area of cone==",total_surface_area_of_a_cone(r,h))
-    elif s==3:
-        r = float(input("Enter radius:"))
-        h = float(input("Enter height"))
-        print("volume of cone==",volume_of_cone(r,h))
-if b==3:
-    sphere(input)
-if b==4:
-    print("select:"'\n', "1.Area of hemisphere", '\n', "2.Volume of hemisphere", '\n')
+def hemisphere(r):
+    print("select:"'\n', 
+    "1.Area of hemisphere",
+    '\n',
+    "2.Volume of hemisphere",
+    '\n')
     y=int(input("Enter :"))
-    if y == 1:
-        x = float(input("Enter radius of the hemisphere "))
-        print("THE AREA IS:")
-        print(hemisphere_area(x))
-    elif y == 2:
-        x = float(input("Enter radius of the hemisphere "))
-        print("THE VOLUME IS")
-        print(hemisphere_area(x))
-if b==5:
-     print("select:"'\n',"1.lateral surface  of cuboid",'\n',"2.Total surface area of cuboid",'\n',"3.Volume of cone")
-     w=int(input("Enter: "))
-     if w==1:
-         l=float(input("Enter lenth:"))
-         b=float(input("Enter depth:"))
-         h = float(input("Enter height:"))
-         print("lateral surface  of cuboid=",lateral_surface_area_of_cuboid(l,b,h))
-
-     if w==2:
-
-        l = float(input("Enter lenth:"))
-        b = float(input("Enter depth:"))
-        h = float(input("Enter height:"))
-        print("lateral surface  of cuboid=", Total_surface_area_of_cubiod_(l,b,h))
-
-     if w==3:
-        l = float(input("Enter lenth:"))
-        b = float(input("Enter depth:"))
-        h = float(input("Enter height:"))
-        print("volume  of cuboid=", cubiod_volume(l,b,h) )
+    x = float(input("Enter radius of the hemisphere "))
 
 
+    if y==1:
+     def hemisphere_area(r):                                #By 21BCG10140
+         a=3*(22/7)*r*r
+         print("THE AREA IS:")
+         print(hemisphere_area(x)) 
+         return a
+    
+
+    if y==2:
+     def hemisphere_volume(r):
+         v=(2/3)*(22/7)*r*r*r
+         print("THE VOLUME IS")         
+         print(hemisphere_volume(x))
+         return v
+ 
+def cuboid(l,b,h):
+    w=int(input("Enter: "))
+    l=float(input("Enter lenth:"))
+    b=float(input("Enter depth:"))
+    h = float(input("Enter height:"))
+    if w==1:
+        def cubiod_volume(l,b,h):                               #BYxxxxxxxxxxxx
+            volume =l*b*h
+            print("volume  of cuboid=", cubiod_volume(l,b,h))
+            return volume
+    if w==2:    
+        def Total_surface_area_of_cubiod_(l,b,h):
+            a=2*(l*b+b*h+l*h)
+            print("lateral surface  of cuboid=", Total_surface_area_of_cubiod_(l,b,h))
+            return a
+    if w==3:    
+        def lateral_surface_area_of_cuboid(l,b,h):
+            q= 2*h*(l+b)
+            print("lateral surface  of cuboid=",lateral_surface_area_of_cuboid(l,b,h))
+            return q
 
 
+while True:
+    print("select the action you would like to take",
+    '\n',
+    "1.cube",
+    '\n',
+    "2.cone",
+    '\n',
+    "3.sphere",
+    '\n',
+    "4.Hemisphere",
+    '\n',
+    "5.cubiod"
+    '\n',
+    "6.exit")
+    b = int(input("Enter:"))
+    if b==1:
+        cube(input)
 
+    if b==2:
+        cone(input,input)
+
+    if b==3:
+        sphere(input)
+
+    if b==4:
+        hemisphere(input)
+
+    if b==5:
+        cuboid(input,input,input)
+    
+    if b==6:
+        break
+    else:
+        print('invalid option, select appropriate option')
