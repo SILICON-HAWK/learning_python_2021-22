@@ -148,5 +148,5 @@ while True:
     
     if b==6:
         break
-    else:
-        print('invalid option, select appropriate option')
+    elif b> 6:
+        print('invalid option')
