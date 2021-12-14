@@ -6,7 +6,7 @@ def cone(r,h):
     print("select:"'\n',"1.Curved surface area of cone",'\n',"2.Total surface area of cone",'\n',"3.Volume of cone")
     s=int(input("Enter your choose:"))
     if s==3:
-        def volume_of_cone(r,h):                         #BY 21BCE10077
+        def volume_of_cone(r,h):                                                         #BY 21BCE10077
             c=(1/3)*(math.pi)*(r**2)*h
             return c
         print("volume of cone==",volume_of_cone(r,h))
@@ -23,7 +23,7 @@ def cone(r,h):
             return area
         print("Total surface area of cone==",total_surface_area_of_a_cone(r,h))
 
-def sphere(set):                                #BY21BCE10074
+def sphere(set):                                                                          #BY21BCE10074
     import math
     r = float(input('radius of the sphere'))
     print("Select")
@@ -80,7 +80,7 @@ def hemisphere(r):
 
 
     if y==1:
-     def hemisphere_area(r):                                #By 21BCG10140
+     def hemisphere_area(r):                                                            #By 21BCG10140
          a=3*(22/7)*r*r
          print("THE AREA IS:")
          print(hemisphere_area(x)) 
@@ -100,7 +100,7 @@ def cuboid(l,b,h):
     b=float(input("Enter depth:"))
     h = float(input("Enter height:"))
     if w==1:
-        def cubiod_volume(l,b,h):                               #BYxxxxxxxxxxxx
+        def cubiod_volume(l,b,h):                                                              #BY Tarun Thakur
             volume =l*b*h
             print("volume  of cuboid=", cubiod_volume(l,b,h))
             return volume
