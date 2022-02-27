@@ -43,7 +43,9 @@ class bank_account{
     }
 };
 
-
+class bank_functions{
+    public:
+};
 
 int main(){
     bank_account b;

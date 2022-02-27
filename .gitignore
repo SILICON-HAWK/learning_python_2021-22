@@ -3,7 +3,9 @@ maths_lab_V1.py
 workspace.py
 get-pip.py
 c++ practice/a.exe
-#.vscode/c_cpp_properties.json
+vscode/c_cpp_properties.json
 c++ practice/.vscode/c_cpp_properties.json
 .vscode/c_cpp_properties.json
 c++ practice/.vscode/settings.json
+C++ practice files/.vs/ProjectSettings.json
+C++ practice files/.vs/VSWorkspaceState.json
