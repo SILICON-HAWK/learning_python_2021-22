@@ -9,3 +9,4 @@ c++ practice/.vscode/c_cpp_properties.json
 c++ practice/.vscode/settings.json
 C++ practice files/.vs/ProjectSettings.json
 C++ practice files/.vs/VSWorkspaceState.json
+*.exe
